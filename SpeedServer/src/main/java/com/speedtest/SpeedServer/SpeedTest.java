@@ -25,12 +25,13 @@ public class SpeedTest {
     
     @RequestMapping("/")
     public String index() {
-        return "Up and running...";
+        return "Up and running again";
     }
     
-    private static final String EXTERNAL_FILE_PATH = "/Users/nicholasarduini/file_200_MB2.bin";
+    private static final String EXTERNAL_FILE_PATH = "/home/belluxpi/reponumerouno/file_200_MB.bin";
     
     //home/belluxpi/gs-spring-boot/complete
+    // /home/belluxpi/reponumerouno/file_200_MB.bin
 
     @RequestMapping(value="/download", method=RequestMethod.GET)
 	public String download(HttpServletRequest request, HttpServletResponse response) throws IOException {
